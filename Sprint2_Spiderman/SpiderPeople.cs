@@ -16,55 +16,32 @@ namespace Sprint2_Spiderman
 
         public string About()
         {
-            return this.Name + " has spider-based abilities \nWeb shooter with a capacity of " + this.MaxWebCount + " uses, \nCurrent web count is: " + CurrentWebCount;
+            return "";
         }
         public SpiderPeople()
         {
-            this.WebShooterReady = false;
-            this.WebCartridge = new WebCartridge();
-            this.MaxWebCount = 10;
-            this.CurrentWebCount = MaxWebCount;
+
         }
         public void WebSwing()
         {
-            WebSwing(1);
         }
 
         public void WebSwing(int HowManyTimes)
         {
-            if (WebShooterReady)
-            {
-                if (this.CurrentWebCount >= HowManyTimes && this.CurrentWebCount > 0)
-                {
-                    this.CurrentWebCount = this.CurrentWebCount - HowManyTimes;
-                    Console.WriteLine(this.Name + " web slings around New York City.");
-                }
-                else
-                    Console.WriteLine("There is not enough webbing in the cartridge");
-            }
-
-            else
-                Console.WriteLine("The web shooter is not ready");
 
         }
 
         public void RefillWebShooter()
         {
-            this.WebCartridge.InsertWebCartridge();
-            this.CurrentWebCount = this.MaxWebCount;
 
         }
         public void EmptyWebShooter()
         {
-                this.WebCartridge.RemoveWebCartridge();
+
         }
 
         public void WebShooterPrepared()
         {
-            if (this.WebCartridge.CartridgeInstalled)
-                this.WebShooterReady = true;
-            else
-                this.WebShooterReady = false;
 
         }
 

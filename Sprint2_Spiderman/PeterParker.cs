@@ -10,9 +10,7 @@ namespace Sprint2_Spiderman
     {
         public PeterParker() : base()
         {
-            this.Name = "Peter Parker";
-            this.MaxWebCount = 14;
-            this.CurrentWebCount = 14;
+
         }
     }
 }

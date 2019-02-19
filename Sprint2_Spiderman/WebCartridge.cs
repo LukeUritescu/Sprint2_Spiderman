@@ -12,25 +12,19 @@ namespace Sprint2_Spiderman
 
         public string About()
         {
-            if (CartridgeInstalled)
-                return "Web Cartridge is inserted";
-            else
-                return "Web cartridge is not inserted";
+            return "";
         }
 
         public WebCartridge()
         {
-            CartridgeInstalled = false;
         }
 
         public void InsertWebCartridge()
         {
-            CartridgeInstalled = true;
         }
 
         public void RemoveWebCartridge()
         {
-            CartridgeInstalled = false;
         }
     }
 }
