@@ -91,6 +91,9 @@ namespace UnitTestSpiderman
             Assert.AreEqual(0, final_swing);
         }
 
+        /// <summary>
+        /// Test if the web shooter gets properly replenished
+        /// </summary>
         [TestMethod]
         public virtual void Test_SpiderPeople_Refill_WebShooter_After_Depletion()
         {
